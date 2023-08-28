@@ -3,15 +3,20 @@ This docker container provides the new (as of Dec 2022) dedicated server for ETS
 Easy to configure and use!
 
 # Contents
- - [Running](#running)
-   - [ETS2](#ets2)
-   - [ATS](#ats)
- - [Environment Variables](#environment-variables)
- - [Custom DLCs/Mods](#custom-dlcmods)
- - [Troubleshooting](#troubleshooting)
-   - [Login Error 15](#login-error-15)
-   - [Login Error 106](#login-error-106)
-   - [Can't write config file `server_config.sii`](#cant-write-config-file-server_configsii)
+- [ETS2/ATS Convoy Multiplayer Dedicated Server](#ets2ats-convoy-multiplayer-dedicated-server)
+- [Contents](#contents)
+- [Running](#running)
+  - [Minimal example:](#minimal-example)
+    - [ETS2](#ets2)
+    - [ATS](#ats)
+  - [Docker Compose](#docker-compose)
+- [Server Configuration](#server-configuration)
+  - [Environment Variables](#environment-variables)
+  - [Custom DLC/Mods](#custom-dlcmods)
+- [Troubleshooting](#troubleshooting)
+  - [Login Error 15](#login-error-15)
+  - [Login Error 106](#login-error-106)
+  - [Can't write config file `server_config.sii`](#cant-write-config-file-server_configsii)
 
 # Running
 ## Minimal example:
@@ -92,6 +97,7 @@ Stop the server with `docker compose stop` and remove it with `docker compose do
 | ETS_SERVER_HIDE_COLLIDING | true | Enable/disable hiding of players in no collisions zone | true |
 | ETS_SERVER_FORCE_SPEEDLIMITER | false | Enable/disable speed limit | false |
 | ETS_SERVER_MODS_OPTIONING | false | Enable optional mods | false |
+| ETS_SERVER_TIMEZONES | false | Enable time zones | false |
 | ETS_SERVER_SERVICE_NO_COLLISION | false | Enable/disable collision in service areas (true = collisions enable, false = collisions disabled) | false |
 | ETS_SERVER_NAME_TAGS | true | Enable/disable display of name tags above trucks | true |
 | ETS_SERVER_FRIENDS_ONLY | false | Limit server to steam friends??? | false |
